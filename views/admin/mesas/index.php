@@ -26,7 +26,7 @@ $this->startSection('contenido');
                                                 <div class="input-group">
                                                     <?php if ($modo == 'A'): ?>
                                                         <button onclick="modalCrear();" type="button" class="btn btn-success btn-sm">Nuevo</button>
-                                                    <?php endif; ?>
+                                                   <?php endif; ?>
                                                 </div>
                                             </div>
                                         </div>

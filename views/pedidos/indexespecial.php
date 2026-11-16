@@ -80,7 +80,7 @@ echo $login->render();
                                 <input type="text" onkeypress="enterdetalle(this)" class="form-control form-control-sm" name="txtdetalle" placeholder="Referencia" id="txtdetalle" value="">
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" style="display:none;">
                             <?php
                             $cmon = isset($datoscliente['mone']) ? $datoscliente['mone'] : 'S';
                             $tpmoneda = new TipoMonedaComponent($cmon);

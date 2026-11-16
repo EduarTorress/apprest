@@ -35,7 +35,7 @@
             <label class="col-sm-0 col-form-label col-form-label-sm">Precios:</label>
             <select class="form-select form-select-sm mb-3" id="cmbprecios" name="cmbprecios" aria-label="">
                 <option><?php echo ($tipo <> 'N' ? Round($itemcarrito['precio1'], 2) : 0) ?></option>
-                <option><?php echo ($tipo <> 'N' ? Round($itemcarrito['precio2'], 2) : 0) ?></option>
+                <!-- <option><?php echo ($tipo <> 'N' ? Round($itemcarrito['precio2'], 2) : 0) ?></option> -->
                 <option <?php echo 'selected' ?>><?php echo ($tipo <> 'N' ? Round($itemcarrito['precio3'], 2) : 0) ?></option>
             </select>
         </div>
@@ -46,7 +46,7 @@
         </div>
         <div class="mb-3 form-group row">
             <label class="col-sm-0 col-form-label col-form-label-sm">Precio:</label>
-            <input type="number" style="width: 100px;" onkeyup="calcularigv();" class="form-control form-control-sm" name="txtprecio" id="txtprecio" placeholder="0.00" value="<?php echo ($tipo <> 'N' ? Round($itemcarrito['precio'], 2) : 0.00) ?>">
+            <input type="number" style="width: 100px;" readonly onkeyup="calcularigv();" class="form-control form-control-sm" name="txtprecio" id="txtprecio" placeholder="0.00" value="<?php echo ($tipo <> 'N' ? Round($itemcarrito['precio'], 2) : 0.00) ?>">
         </div>
     </div>
     <div class="modal-footer">

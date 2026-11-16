@@ -14,7 +14,7 @@
                 <label class="radio-inline">
                     <input type="radio" name="optradiosP" value="codigo" id="codigo" onchange="obtenertipobusquedaProducto()" <?php echo (empty($_SESSION['config']['codigobarras']) ? ' ' : 'checked') ?>>&nbsp;Código Fab&nbsp;
                 </label>
-                <button style="float: right; position: relative; top: -5px;" class="btn btn-success" id="btncrearproductomodal" onclick="modalCrear();"><a role="button" style="color:white;">Nuevo</a></button>
+                <!-- <button style="float: right; position: relative; top: -5px;" class="btn btn-success" id="btncrearproductomodal" onclick="modalCrear();"><a role="button" style="color:white;">Nuevo</a></button> -->
                 <div class="input-group mb-3">
                     <input type="text" autocomplete="off" class="form-control" id="txtbuscarProducto" name="buscar" onkeypress="pulsarenterbuscarproductos(event)" onkeyup="mayusculas(this)" placeholder="Producto a Buscar" value="<?php echo session()->get('busquedaPV') ?>">
                     <div class="input-group-append">

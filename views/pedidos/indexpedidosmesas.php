@@ -59,7 +59,7 @@ $this->startSection('contenido');
                                 data-idpedido="<?php echo $idpedido; ?>">
                                 <i class="fas fa-chair fa-2x mb-2 <?php echo $color; ?>"></i>
                                 <h4 class="mb-1">
-                                    <?php echo 'MESA #' . $idmesa; ?>
+                                    <?php echo 'MESA N° ' . $idmesa; ?>
                                 </h4>
                                 <h5>
                                     <?php echo $nombre; ?>
