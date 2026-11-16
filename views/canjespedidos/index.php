@@ -453,13 +453,12 @@ $this->startSection('javascript');
                     xhr.send();
                     limpiardatos();
                     <?php $_SESSION['carritov'] = []; ?>
-                })                .catch(function(error) {
+                }).catch(function(error) {
                     console.log(error);
                     mostrarerroresvalidacion(error);
                 });
         });
     }
-
 
     function cancelarVenta() {
         limpiardatos();
